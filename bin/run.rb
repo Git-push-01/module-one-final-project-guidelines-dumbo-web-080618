@@ -2,6 +2,7 @@ require_relative '../config/environment'
 
 
 
+
 puts
 Team.all.each do |team|
   puts "Welcome To NFL Player Stats"
@@ -20,6 +21,17 @@ all_players.each do |player|
   puts "#{player.name}"
 
 end
+
+# Status Key
+puts "ACT = Active"
+puts "RES = Injured reserve"
+puts "NON = Non football related injured reserve"
+puts "SUS = Suspended"
+puts "PUP = Physically unable to perform"
+puts "UDF = Unsigned draft pick"
+puts "EXE = Exempt"
+
+
 puts
 player_name = gets.chomp
 puts
