@@ -4,13 +4,16 @@ require_relative '../config/environment'
 
 puts
 Team.all.each do |team|
-  puts "Welcome To #{team.name} Player Stats"
+  puts "Welcome To NFL Player Stats"
 end
 puts
 
 team = Team.find(1)
 
-puts"Pick a Jets Player"
+puts"Pick a Team "
+puts
+
+puts"Pick a Player see the Stats"
 all_players = team.players
 puts
 all_players.each do |player|
