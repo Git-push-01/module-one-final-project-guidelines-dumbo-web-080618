@@ -1,7 +1,7 @@
 Team.destroy_all
-Team.create(name: "")
+Team.create(name: "Philadelphia Eagles")
 Team.create(name: "New York Giants")
-Team.create(name: "New York Jets")
+abc = Team.create(name: "New York Jets")
 
 
 Player.destroy_all
@@ -9,7 +9,6 @@ Player.destroy_all
 Player.create(name: "Jamal Adams",player_number: "33", player_status: "ACT", birth_date: "10/17/1995",height:"6'1",weight:"213",college: "LSU")
 Player.create(name: "Robby Anderson",player_number: "11", player_status: "ACT", birth_date: "5/9/1993",height:"6'3",weight:"190",college: "Temple")
 Player.create(name: "Henry Anderson",player_number: "96", player_status: "ACT", birth_date: "8/3/1991",height:"6'6",weight:"301",college: "Stanford")
-
 Player.create(name: "Jeremiah Attaochu",player_number: "55", player_status: "ACT", birth_date: "1/17/1993",height:"6'3",weight:"252",college: "Georgia Tech")
 Player.create(name: "Kelvin Beachum",player_number: "68", player_status: "ACT", birth_date: "6/8/1989",height:"6'3",weight:"308",college: "Southern Methodist")
 Player.create(name: "Braden, Ben",player_number: "69", player_status: "ACT", birth_date: "3/9/1994",height:"6'6",weight:"329",college: "Michigan")
@@ -49,31 +48,25 @@ Player.create(name: "Jason Myers",player_number: "2", player_status: "ACT", birt
 Player.create(name: "Parry Nickerson",player_number: "43", player_status: "ACT", birth_date: "10/11/1994",height:"5'10",weight:"182",college: "Tulane")
 Player.create(name: "Charone Peake",player_number: "17", player_status: "ACT", birth_date: "10/16/1992",height:"6'2",weight:"209",college: "Clemson")
 Player.create(name: "Mike Pennel",player_number: "98", player_status: "ACT", birth_date: "5/9/1991",height:"6'4",weight:"332",college: "Colorado State-Pueblo")
-# Player.create(name: "",player_number: "", player_status: "", birth_date: "",height:"",weight:"",college: "")
-# Player.create(name: "",player_number: "", player_status: "", birth_date: "",height:"",weight:"",college: "")
-# Player.create(name: "",player_number: "", player_status: "", birth_date: "",height:"",weight:"",college: "")
-# Player.create(name: "",player_number: "", player_status: "", birth_date: "",height:"",weight:"",college: "")
-# Player.create(name: "",player_number: "", player_status: "", birth_date: "",height:"",weight:"",college: "")
-# Player.create(name: "",player_number: "", player_status: "", birth_date: "",height:"",weight:"",college: "")
+Player.create(name: "Kevin Pierre-Louis",player_number: "56", player_status: "SUS", birth_date: "10/7/1991",height:"6'0",weight:"230",college: "Boston College")
+Player.create(name: "Bilal Powell",player_number: "29", player_status: "ACT", birth_date: "10/27/1988",height:"5'10",weight:"204",college: "Louisville")
+Player.create(name: "Pryor, Terrelle",player_number: "1", player_status: "ACT", birth_date: "6/20/1989",height:"6'4",weight:"228",college: "Ohio State")
+Player.create(name: "Brent Qvale",player_number: "79", player_status: "ACT", birth_date: "3/11/1991",height:"6'7",weight:"315",college: "Nebraska")
+Player.create(name: "Andre Roberts",player_number: "3", player_status: "ACT", birth_date: "1/9/1988",height:"5'11",weight:"195",college: "The Citadel")
+Player.create(name: "Darryl Roberts",player_number: "27", player_status: "ACT", birth_date: "11/26/1990",height:"6'0",weight:"182",college: "Marshall")
+Player.create(name: "Rashard Robinson",player_number: "30", player_status: "SUS", birth_date: "7/23/1995",height:"6'2",weight:"177",college: "LSU")
+Player.create(name: "Brandon Shell",player_number: "72", player_status: "ACT", birth_date: "2/6/1992",height:"6'5",weight:"324",college: "South Carolina")
+Player.create(name: "Nathan Shepherd",player_number: "97", player_status: "ACT", birth_date: "10/9/1993",height:"6'4",weight:"315",college: "Fort Hays State")
+Player.create(name: "Buster Skrine",player_number: "41", player_status: "ACT", birth_date: "4/26/1989",height:"5'9",weight:"185",college: "Tennessee-Chattanooga")
+Player.create(name: "Neal Sterling",player_number: "85", player_status: "ACT", birth_date: "1/14/1992",height:"6'4",weight:"257",college: "Monmouth (N.J.)")
+Player.create(name: "ArDarius Stewart",player_number: "18", player_status: "SUS", birth_date: "12/8/1993",height:"6'0",weight:"205",college: "Alabama")
+Player.create(name: "Eric Tomlinson",player_number: "83", player_status: "ACT", birth_date: "4/22/1992",height:"6'6",weight:"263",college: "Texas-El Paso")
+Player.create(name: "J.J. Wilcox",player_number: "27", player_status: "ACT", birth_date: "2/14/1991",height:"6'0",weight:"212",college: "Georgia Southern")
+Player.create(name: "Leonard Williams",player_number: "92", player_status: "ACT", birth_date: "6/20/1994",height:"6'5",weight:"302",college: "USC")
+Player.create(name: "Avery Williamson",player_number: "54", player_status: "ACT", birth_date: "3/9/1992",height:"6'1",weight:"246",college: "Kentucky")
+Player.create(name: "Brian Winters",player_number: "67", player_status: "ACT", birth_date: "7/10/1991",height:"6'4",weight:"320",college: "Kent State")
+
+
+PlayerCard.create(team_id: Team.all.first.id, player_id:Player.all.first.id)
 # PlayerCard.destroy_all
 # PlayerCard.create(team_id:, player_id:)
-
-# 98 	Pennel, Mike 	DT 	ACT 	6'4" 	332 	5/9/1991 	5 	Colorado State-Pueblo
-# 56 	Pierre-Louis, Kevin 	LB 	SUS 	6'0" 	230 	10/7/1991 	5 	Boston College
-# 29 	Powell, Bilal 	RB 	ACT 	5'10" 	204 	10/27/1988 	8 	Louisville
-# 1 	Pryor, Terrelle 	WR 	ACT 	6'4" 	228 	6/20/1989 	6 	Ohio State
-# 79 	Qvale, Brent 	OT 	ACT 	6'7" 	315 	3/11/1991 	4 	Nebraska
-# 3 	Roberts, Andre 	WR 	ACT 	5'11" 	195 	1/9/1988 	9 	The Citadel
-# 27 	Roberts, Darryl 	CB 	ACT 	6'0" 	182 	11/26/1990 	4 	Marshall
-# 30 	Robinson, Rashard 	CB 	SUS 	6'2" 	177 	7/23/1995 	3 	LSU
-# 72 	Shell, Brandon 	OT 	ACT 	6'5" 	324 	2/6/1992 	3 	South Carolina
-# 97 	Shepherd, Nathan 	DT 	ACT 	6'4" 	315 	10/9/1993 	0 	Fort Hays State
-# 41 	Skrine, Buster 	DB 	ACT 	5'9" 	185 	4/26/1989 	8 	Tennessee-Chattanooga
-# 85 	Sterling, Neal 	TE 	ACT 	6'4" 	257 	1/14/1992 	4 	Monmouth (N.J.)
-# 18 	Stewart, ArDarius 	WR 	SUS 	6'0" 	205 	12/8/1993 	2 	Alabama
-# 83 	Tomlinson, Eric 	TE 	ACT 	6'6" 	263 	4/22/1992 	3 	Texas-El Paso
-# 27 	Wilcox, J.J. 	DB 	ACT 	6'0" 	212 	2/14/1991 	6 	Georgia Southern
-# 92 	Williams, Leonard 	DT 	ACT 	6'5" 	302 	6/20/1994 	4 	USC
-# 54 	Williamson, Avery 	LB 	ACT 	6'1" 	246 	3/9/1992 	5 	Kentucky
-# 67 	Winters, Brian 	OG 	ACT 	6'4" 	320 	7/10/1991 	6 	Kent State
-#
