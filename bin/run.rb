@@ -4,32 +4,34 @@ require_relative '../config/environment'
 
 
 puts
-Team.all.each do |team|
+
   puts "Welcome To NFL Player Stats"
+
+puts
+Team.all.each do |team|
+  puts "#{team.name}"
 end
 puts
-
-team = Team.find(1)
-
 puts"Pick a Team "
+team_name = gets.chomp
 puts
 
 puts"Pick a Player see the Stats"
-all_players = team.players
+
 puts
-all_players.each do |player|
+Player.all.select do |player|
   puts "#{player.name}"
 
 end
-
+puts
 # Status Key
-puts "ACT = Active"
-puts "RES = Injured reserve"
-puts "NON = Non football related injured reserve"
-puts "SUS = Suspended"
-puts "PUP = Physically unable to perform"
-puts "UDF = Unsigned draft pick"
-puts "EXE = Exempt"
+# puts "ACT = Active"
+# puts "RES = Injured reserve"
+# puts "NON = Non football related injured reserve"
+# puts "SUS = Suspended"
+# puts "PUP = Physically unable to perform"
+# puts "UDF = Unsigned draft pick"
+# puts "EXE = Exempt"
 
 
 puts
@@ -45,6 +47,13 @@ puts "Player Height: #{result.height}"
 puts "Player Weight: #{result.weight}"
 puts "Player College: #{result.college}"
 puts
+puts "ACT = Active"
+puts "RES = Injured reserve"
+puts "NON = Non football related injured reserve"
+puts "SUS = Suspended"
+puts "PUP = Physically unable to perform"
+puts "UDF = Unsigned draft pick"
+puts "EXE = Exempt"
 puts
 puts"Thank you come again"
 puts
