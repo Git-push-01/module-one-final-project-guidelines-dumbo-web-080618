@@ -7,3 +7,5 @@ class Player < ActiveRecord::Base
     self.save
   end
 end
+
+##
