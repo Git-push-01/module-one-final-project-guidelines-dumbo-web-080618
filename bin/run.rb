@@ -57,38 +57,97 @@ player  = Player.all.select do |player|
     player.team_id == team_id
   end
    player.each do |a_player|
-    puts a_player.name
+    puts "Player League: #{a_player.team.league.name}"
+    puts "Player Team: #{a_player.team.name}"
+    puts "Player: #{a_player.name}"
+    puts "Player Number: #{a_player.player_number}"
+    puts "Player Position: #{a_player.player_position}"
+    puts "Player Status: #{a_player.player_status}"
+    puts "Player Birth Date: #{a_player.birth_date}"
+    puts "Player Height: #{a_player.height}"
+    puts "Player Weight: #{a_player.weight}"
+    puts "Player College: #{a_player.college}"
         # puts a_player.team.league
   end
 end
 
+# def player_loop
+#
+#   puts "Select a player:"
+#   a_player = gets.chomp
+#   puts
+#   puts "When you are done press N"
+#   puts
+#
+#   add_a_player_to_a_team(a_player, team)
+#   find_player_with_team_id(team.id)
 
+
+
+
+
+
+
+# end
 
  def executables
 league=create_league
+puts
 team = create_team
+
 team.add_to_league(league)
+
 show_all_players
 puts
 puts
-
-puts "Select a player"
-puts "When you are done plese press N"
+#player_loop
+puts "Select a player:"
+loop do
+######
 a_player = gets.chomp
 puts
+#puts "When you are done plese press N"
 puts
 add_a_player_to_a_team(a_player, team)
 find_player_with_team_id(team.id)
+puts "When you are done plese press N"
+if a_player == "N"
+  puts "Done"
 
- puts "Select a player"
- puts "When you are done plese press N"
- a_player = gets.chomp
- puts
- puts
- add_a_player_to_a_team(a_player, team)
-find_player_with_team_id(team.id)
+  break
+#######
 
+#
 
+#  puts "Select a player:"
+#  #puts "When you are done plese press N"
+#  a_player = gets.chomp
+#  puts
+#  puts
+#  add_a_player_to_a_team(a_player, team)
+# find_player_with_team_id(team.id)
+#
+# puts "When you are done plese press N"
 end
+end
+end
+#executables
+# def player_loop
+#
+# loop do
+#   puts "Select a player:"
+#
+#   a_player = gets.chomp
+#   puts
+#   puts "When you are done plese press N"
+#   puts
+#   add_a_player_to_a_team(a_player, team)
+#   find_player_with_team_id(team.id)
+# if a_player == "N"
+#   break
+# end
+# end
+# end
 executables
-# pick_player(player_pick)
+#player_loop
+#pick_player(player_pick)
