@@ -53,12 +53,15 @@ def add_a_player_to_a_team(a_player, team)
   player.add_to_team(team)
    tp player
 end
+def remove_a_player(name)
 
-# def teams(team_name)
-#   Team.all.find do |team|
-#     team.name == team_name
-#   end.id
-# end
+player = Player.find_by(name: name)
+player.team_id = nil
+#binding.pry
+
+end
+#remove_a_player("Davis Tee")
+
 
 def find_player_with_team_id(team_id)
 player  = Player.all.select do |player|

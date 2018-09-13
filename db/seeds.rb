@@ -104,11 +104,7 @@ Player.create(name: "Chris Long",player_number: "56",player_position: "LB", play
 Player.create(name: "Rick Lovato",player_number: "45",player_position: "K", player_status: "ACT", birth_date: "9/9/1992",height:"6'2",weight:"249",college: "Old Dominion")
 Player.create(name: "Avonte Maddox",player_number: "29",player_position: "RB", player_status: "ACT", birth_date: "3/31/1996",height:"5'9",weight:"184",college: "Pittsburgh")
 Player.create(name: "Jordan Mailata",player_number: "68",player_position: "DT", player_status: "ACT", birth_date: "3/31/1997",height:"6'8",weight:"346",college: "Unknown")
-<<<<<<< HEAD
 Player.create(name: "Chris Maragos",player_number: "42",player_position: "OG", player_status: "PUP", birth_date: "1/6/1987",height:"5'10",weight:"200",college: "Wisconsin")
-=======
-Player.create(name: "Chris Maragos",player_number: "42",player_position: "OG", player_position: "CB",player_status: "PUP", birth_date: "1/6/1987",height:"5'10",weight:"200",college: "Wisconsin")
->>>>>>> 9c2c4d66c2c858b4f546c36d428c47e105b157f1
 Player.create(name: "Rodney McLeod",player_number: "23",player_position: "C", player_status: "ACT", birth_date: "6/23/1990",height:"5'10",weight:"195",college: "Virginia")
 Player.create(name: "Jalen Mills",player_number: "31",player_position: "K", player_status: "ACT", birth_date: "4/6/1994",height:"6'0",weight:"191",college: "LSU")
 Player.create(name: "Haloti Ngata",player_number: "94",player_position: "WR", player_status: "ACT", birth_date: "1/21/1984",height:"6'4",weight:"340",college: "Oregon")
@@ -132,8 +128,7 @@ Player.create(name: "Carson Wentz",player_number: "11",player_position: "WR", pl
 Player.create(name: "Markus Wheaton",player_number: "80",player_position: "OG", player_status: "ACT", birth_date: "2/7/1991",height:"5'11",weight:"185",college: "Oregon State")
 Player.create(name: "Stefen Wisniewski",player_number: "61",player_position: "DT", player_status: "ACT", birth_date: "3/22/1989",height:"6'3",weight:"305",college: "Penn State")
 Player.create(name: "Paul Worrilow",player_number: "50",player_position: "RB", player_status: "RES", birth_date: "5/1/1990",height:"6'0",weight:"230",college: "Delaware")
-<<<<<<< HEAD
-=======
+
 
 
 #New York Giants
@@ -193,7 +188,6 @@ Player.create(name: "Kerry Wilams",player_number: "94",player_position: "DT", pl
 Player.create(name: "Tanny Alex",player_number: "23",player_position: "RB", player_status: "ACT", birth_date: "6/16/1993",height:"6'6",weight:"320",college: "Texas Christian")
 Player.create(name: "Mike Wallace",player_number: "72",player_position: "LBS", player_status: "ACT", birth_date: "8/1/1986",height:"6'0",weight:"200",college: "Mississippi")
 
->>>>>>> 9c2c4d66c2c858b4f546c36d428c47e105b157f1
 
 
 #New York Giants
