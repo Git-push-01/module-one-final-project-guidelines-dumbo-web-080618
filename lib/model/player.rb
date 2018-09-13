@@ -6,6 +6,8 @@ class Player < ActiveRecord::Base
     self.team = team
     self.save
   end
+
+  
 end
 
 ##

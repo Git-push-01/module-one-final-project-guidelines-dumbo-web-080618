@@ -53,12 +53,16 @@ def add_a_player_to_a_team(a_player, team)
   player.add_to_team(team)
    tp player
 end
-def remove_a_player(name)
-
+def remove_a_player
+  puts "To remove a player from team enter the player name:"
+   puts
+  name = gets.chomp
+ puts
 player = Player.find_by(name: name)
 player.team_id = nil
+ puts "Player removed #{player.name}"
 #binding.pry
-
+player
 end
 #remove_a_player("Davis Tee")
 
@@ -174,53 +178,107 @@ team = create_team
 
 team.add_to_league(league)
 
+
 show_all_players
 puts
-puts
+
+
+puts "To add player type 'add'"
+puts "to delete type 'delete'"
+puts "when dine type 'done'"
+x = gets.chomp
+while x != 'done'
+  case  x
+  when x = "add"
+    a_player = gets.chomp
+    add_a_player_to_a_team(a_player, team)
+    find_player_with_team_id(team.id)
+    puts "To add player type 'add'"
+    puts "to delete type 'delete'"
+    puts "when dine type 'done'"
+    x = gets.chomp
+
+  when x = "delete"
+    remove_a_player
+    puts "To add player type 'add'"
+    puts "to delete type 'delete'"
+    puts "when dine type 'done'"
+    x = gets.chomp
+
+
+
+  end
+
+end
+
+
+end
+
+
+
+
+
+
 #player_loop
-puts "Select a player:"
-puts "When you are done press N"
-puts
-loop do
-######
-a_player = gets.chomp
-puts
-#puts "When you are done plese press N"
-
-
-
-  #puts "Done"
-
-
-puts
-add_a_player_to_a_team(a_player, team)
-find_player_with_team_id(team.id)
-puts
-puts "Add another Player"
-puts
-puts "When you are done plese press N"
-puts
-
-
-if a_player == "N"
-  break
-#puts "When you are done press N"
-#######
-
-#
-
 #  puts "Select a player:"
-#  #puts "When you are done plese press N"
-#  a_player = gets.chomp
-#  puts
-#  puts
-#  add_a_player_to_a_team(a_player, team)
+# # puts "When you are done press N"
+# puts
+#
+# ######
+# a_player = gets.chomp
+# puts
+# #puts "When you are done plese press N"
+#
+#
+#
+#   #puts "Done"
+#
+#
+# puts "Add another Player"
+#
+# add_a_player_to_a_team(a_player, team)
+#
+#
 # find_player_with_team_id(team.id)
 #
+# name = gets.chomp
+#
+#
+# puts "To remove a player from team enter the player name:"
+# remove_a_player(name)
+# puts
+# puts "Add another Player"
+# puts
 # puts "When you are done plese press N"
-end
-end
-end
+#
+#
+# puts
+#
+#
+#
+#
+# # puts " malcome"
+# # else
+# #   remove_a_player
+# #puts "When you are done press N"
+# #######
+#
+# #
+#
+# #  puts "Select a player:"
+# #  #puts "When you are done plese press N"
+# #  a_player = gets.chomp
+# #  puts
+# #  puts
+# #  add_a_player_to_a_team(a_player, team)
+# # find_player_with_team_id(team.id)
+# #
+# # puts "When you are done plese press N"
+#
+# end
+
+
+
 #executables
 # def player_loop
 #
@@ -241,6 +299,7 @@ end
 
 
 executables
+# remove_a_player
 puts
 
 #player_loop
