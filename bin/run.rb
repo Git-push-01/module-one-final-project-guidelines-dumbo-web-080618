@@ -11,7 +11,7 @@ def create_league
 
   league_name = gets.chomp
 puts
-  league=League.create(name: league_name)
+  league=League.find_or_create_by(name: league_name)
     puts "#{league_name} Thatssssssss Awesome!!!"
     puts
     puts "You created #{league_name}!"
@@ -25,7 +25,7 @@ def create_team
 
   team_name = gets.chomp
 puts
-  a_team=Team.create(name: team_name)
+  a_team=Team.find_or_create_by(name: team_name)
     puts "#{team_name} cool!!!"
     puts
     puts "You created #{team_name}!"
@@ -185,11 +185,12 @@ puts
 
 puts "To add player type 'add'"
 puts "to delete type 'delete'"
-puts "when dine type 'done'"
-x = gets.chomp
+puts "when done type 'done'"
+x = gets.chomp.downcase
 while x != 'done'
+  #binding.pry
   case  x
-  when x = "add"
+  when "add"
     a_player = gets.chomp
     add_a_player_to_a_team(a_player, team)
     find_player_with_team_id(team.id)
@@ -198,17 +199,20 @@ while x != 'done'
     puts "when dine type 'done'"
     x = gets.chomp
 
-  when x = "delete"
+  when "delete"
     remove_a_player
     puts "To add player type 'add'"
     puts "to delete type 'delete'"
-    puts "when dine type 'done'"
+    puts "when done type 'done'"
     x = gets.chomp
 
-
-
   end
-
+  system 'clear'
+  puts "not a valid input, try again"
+  puts "To add player type 'add'"
+  puts "to delete type 'delete'"
+  puts "when done type 'done'"
+    x = gets.chomp
 end
 
 
