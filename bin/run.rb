@@ -53,6 +53,7 @@ def add_a_player_to_a_team(a_player, team)
   player.add_to_team(team)
    tp player
 end
+
 def remove_a_player
   puts "To remove a player from team enter the player name:"
    puts
@@ -230,12 +231,12 @@ loop do
 
 
   end
-  # system 'clear'
-  # puts "Not a valid input, try again"
-  # puts "To add player type 'add'"
-  # puts "To delete type 'delete'"
-  # puts "When done type 'done'"
-  #   x = gets.chomp
+   # system 'clear'
+   # puts "Not a valid input, try again"
+   # puts "To add player type 'add'"
+   # puts "To delete type 'delete'"
+   # puts "When done type 'done'"
+   #   x = gets.chomp
 end
 
 
