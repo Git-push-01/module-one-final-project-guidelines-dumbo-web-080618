@@ -164,7 +164,7 @@ Player.create(name: "Jenkins Janoris",player_number: "20",player_position: "CB",
 Player.create(name: "Jordan Mike",player_number: "33",player_position: "DB", player_status: "ACT", birth_date: "5/8/1990",height:"6'6",weight:"317",college: "Oklahoma")
 Player.create(name: "latimere cody",player_number: "12",player_position: "TE", player_status: "ACT", birth_date: "2/24/1992",height:"5'11",weight:"194",college: "Ohio State")
 Player.create(name: "laulett Kyle",player_number: "17",player_position: "TB", player_status: "ACT", birth_date: "5/21/1996",height:"6'0",weight:"181",college: "Washington")
-Player.create(name: "Manning Eli, ",player_number: "10",player_position: "OG", player_status: "ACT", birth_date: "11/5/1987",height:"6'3",weight:"295",college: "Cincinnati")
+Player.create(name: "Manning Eli ",player_number: "10",player_position: "OG", player_status: "ACT", birth_date: "11/5/1987",height:"6'3",weight:"295",college: "Cincinnati")
 Player.create(name: "Martin Kareem",player_number: "96",player_position: "QB", player_status: "ACT", birth_date: "3/28/1985",height:"6'3",weight:"270",college: "Virginia")
 Player.create(name: "Josh Maouro",player_number: "97",player_position: "K", player_status: "ACT", birth_date: "9/9/1992",height:"6'2",weight:"249",college: "Old Dominion")
 Player.create(name: "Moor Kam",player_number: "29",player_position: "OG", player_status: "ACT", birth_date: "3/31/1996",height:"5'9",weight:"184",college: "Pittsburgh")

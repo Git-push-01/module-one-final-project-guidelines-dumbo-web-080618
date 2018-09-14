@@ -1,6 +1,6 @@
 require_relative '../config/environment'
 #require 'pp'
-
+require 'pry'
 
 
 
@@ -67,24 +67,28 @@ end
 #remove_a_player("Davis Tee")
 
 
-def find_player_with_team_id(team_id)
-player  = Player.all.select do |player|
-    player.team_id == team_id
-  end
-  #player.each do |a_player|
-  #   puts "Player League: #{a_player.team.league.name}"
-  #  puts "Player Team: #{a_player.team.name}"
-  #   puts "Player: #{a_player.name}"
-  #   puts "Player Number: #{a_player.player_number}"
-  #   puts "Player Position: #{a_player.player_position}"
-  #   puts "Player Status: #{a_player.player_status}"
-  #   puts "Player Birth Date: #{a_player.birth_date}"
-  #   puts "Player Height: #{a_player.height}"
-  #   puts "Player Weight: #{a_player.weight}"
-  #   puts "Player College: #{a_player.college}"
-  #       # puts a_player.team.league
-   #end
-end
+#  def find_player_with_team_id(team_id)
+#  player  = Player.all.find_all do |player|
+#      player.name == team_id
+#
+#    end
+# #binding.pry
+# #   #player.each do |a_player|
+# #   #   puts "Player League: #{a_player.team.league.name}"
+# #   #  puts "Player Team: #{a_player.team.name}"
+# #   #   puts "Player: #{a_player.name}"
+# #   #   puts "Player Number: #{a_player.player_number}"
+# #   #   puts "Player Position: #{a_player.player_position}"
+# #   #   puts "Player Status: #{a_player.player_status}"
+# #   #   puts "Player Birth Date: #{a_player.birth_date}"
+# #   #   puts "Player Height: #{a_player.height}"
+# #   #   puts "Player Weight: #{a_player.weight}"
+# #   #   puts "Player College: #{a_player.college}"
+# #   #       # puts a_player.team.league
+# #    end
+#     player
+#  end
+# find_player_with_team_id(4)
 
 # def player_loop
 #
@@ -186,27 +190,36 @@ puts
 puts "To add player type 'add'"
 puts "To delete type 'delete'"
 puts "When done type 'done'"
-x = gets.chomp.downcase
-while x != 'done'
+#x = gets.chomp.downcase
+loop do
+  x = gets.chomp.downcase
+
   #binding.pry
   case  x
   when "add"
     a_player = gets.chomp
     add_a_player_to_a_team(a_player, team)
-    find_player_with_team_id(team.id)
+    #find_player_with_team_id(team.id)
     puts "To add player type 'add'"
     puts "To delete type 'delete'"
     puts "When dine type 'done'"
     #puts "Show my players type 'Show players'"
-    x = gets.chomp
+    #x = gets.chomp
 
   when "delete"
     remove_a_player
     puts "To add player type 'add'"
     puts "To delete type 'delete'"
     puts "When done type 'done'"
+
+   # when "Show player"
+   #   team_id = gets.chomp
+   #   find_player_with_team_id(team_id)
+
+  when "done"
+    break
     #puts "Show my players type 'Show players'"
-    x = gets.chomp
+    #x = gets.chomp
   # when "Show players"
   #   find_player_with_team_id(team.id)
   #   puts "To add player type 'add'"
@@ -217,12 +230,12 @@ while x != 'done'
 
 
   end
-  system 'clear'
-  puts "Not a valid input, try again"
-  puts "To add player type 'add'"
-  puts "To delete type 'delete'"
-  puts "When done type 'done'"
-    x = gets.chomp
+  # system 'clear'
+  # puts "Not a valid input, try again"
+  # puts "To add player type 'add'"
+  # puts "To delete type 'delete'"
+  # puts "When done type 'done'"
+  #   x = gets.chomp
 end
 
 
