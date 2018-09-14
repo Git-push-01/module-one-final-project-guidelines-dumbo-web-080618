@@ -184,8 +184,8 @@ puts
 
 
 puts "To add player type 'add'"
-puts "to delete type 'delete'"
-puts "when done type 'done'"
+puts "To delete type 'delete'"
+puts "When done type 'done'"
 x = gets.chomp.downcase
 while x != 'done'
   #binding.pry
@@ -195,23 +195,33 @@ while x != 'done'
     add_a_player_to_a_team(a_player, team)
     find_player_with_team_id(team.id)
     puts "To add player type 'add'"
-    puts "to delete type 'delete'"
-    puts "when dine type 'done'"
+    puts "To delete type 'delete'"
+    puts "When dine type 'done'"
+    #puts "Show my players type 'Show players'"
     x = gets.chomp
 
   when "delete"
     remove_a_player
     puts "To add player type 'add'"
-    puts "to delete type 'delete'"
-    puts "when done type 'done'"
+    puts "To delete type 'delete'"
+    puts "When done type 'done'"
+    #puts "Show my players type 'Show players'"
     x = gets.chomp
+  # when "Show players"
+  #   find_player_with_team_id(team.id)
+  #   puts "To add player type 'add'"
+  #   puts "To delete type 'delete'"
+  #   puts "When done type 'done'"
+  #   puts "Show my players type 'Show players'"
+  #   x = gets.chomp
+
 
   end
   system 'clear'
-  puts "not a valid input, try again"
+  puts "Not a valid input, try again"
   puts "To add player type 'add'"
-  puts "to delete type 'delete'"
-  puts "when done type 'done'"
+  puts "To delete type 'delete'"
+  puts "When done type 'done'"
     x = gets.chomp
 end
 
